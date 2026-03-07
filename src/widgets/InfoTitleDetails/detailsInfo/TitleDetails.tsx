@@ -26,7 +26,7 @@ interface TitleDetailsProps {
 }
 
 const TitleDetails = (props: TitleDetailsProps) => {
-  const { title }
+  const { title, getSeasond } = props
   return (
     <div className="flex md:flex-row gap-8 mt-4 ml-5 mr-4 border 1px rounded-2xl border-neutral-800 pt-2 pb-2 pr-2 ">
       <img
@@ -40,7 +40,7 @@ const TitleDetails = (props: TitleDetailsProps) => {
       <div className="flex flex-col gap-3">
         <div className="flex flex-col">
           <p className="font-medium text-xl">
-            Жанры: {props.title?.genres?.join(", ")}
+            Жанры: {title?.genres?.join(", ")}
           </p>
         </div>
         <p className="text-base md:text-lg text-neutral-600 hidden md:block">
@@ -69,7 +69,7 @@ const TitleDetails = (props: TitleDetailsProps) => {
             <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
           </div>
           <div className="flex">
-            {props.title?.franchises && props.getSeasond()}
+            {title?.franchises && getSeasond()}
           </div>
         </div>
       </div>
