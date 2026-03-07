@@ -1,8 +1,36 @@
-const TitleDetails = (props: any) => {
+interface TitleDetailsProps {
+  title?: {
+    posters?: {
+      small?: {
+        url?: string;
+      }
+    };
+    genres?: string[];
+    description?: string;
+    type: {
+      full_string: string;
+      episodes: number;
+    };
+    season: {
+      year: number;
+      string: string;
+    };
+    status: {
+      string: string;
+    };
+    franchises?: any[];
+    // я знаю что все это делается отдельно и куда то выносится, а темболее any нельзя тут использовать, сейчас просматриваю проект с гитхаба и не смотрю особо на ошибки, пока делаю тут деструктуризацию пропсов. 
+    // Вообще все бы поменял на сегодня в глобальное состояние, но увы. ))
+  };
+  getSeasons?: () => React.ReactNode;
+}
+
+const TitleDetails = (props: TitleDetailsProps) => {
+  const { title }
   return (
     <div className="flex md:flex-row gap-8 mt-4 ml-5 mr-4 border 1px rounded-2xl border-neutral-800 pt-2 pb-2 pr-2 ">
       <img
-        src={`https://static-libria.weekstorm.one${props.title?.posters?.small?.url}`}
+        src={`https://static-libria.weekstorm.one${title?.posters?.small?.url}`}
         alt=""
         className="rounded-lg object-cover ml-2"
       />
