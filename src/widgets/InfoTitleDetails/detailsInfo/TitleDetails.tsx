@@ -63,7 +63,7 @@ const TitleDetails = (props: TitleDetailsProps) => {
           Аниме - {title?.season.string}
         </div>
 
-        <div className="border 1px rounded-2xl border-neutral-800 p-1 w-5/6">
+        <div className="border-1px rounded-2xl border-neutral-800 p-1 w-5/6">
           <div>
             <p className="text-xl ml-1">Все сезоны этого аниме</p>
             <hr className="my-2 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
