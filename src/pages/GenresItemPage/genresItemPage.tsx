@@ -46,7 +46,6 @@ export const GenresItemPage = observer(() => {
         )}
       </div>
 
-      {/* Релизы */}
       <div className="mt-12">
         <h3 className="text-2xl font-bold text-white mb-8">Релизы</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
