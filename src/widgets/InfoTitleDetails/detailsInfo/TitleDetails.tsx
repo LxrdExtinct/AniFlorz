@@ -44,7 +44,7 @@ const TitleDetails = (props: TitleDetailsProps) => {
           </p>
         </div>
         <p className="text-base md:text-lg text-neutral-600 hidden md:block">
-          {props.title?.description}
+          {title?.description}
         </p>
         <hr className="h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
         <div className="text-xl semibold font-semibold">
@@ -57,10 +57,10 @@ const TitleDetails = (props: TitleDetailsProps) => {
           Количество эпизодов - {title?.type.episodes}
         </div>
         <div className="text-xl font-sans">
-          Статус - {props.title?.status.string}
+          Статус - {title?.status.string}
         </div>
         <div className="text-xl font-sans">
-          Аниме - {props.title?.season.string}
+          Аниме - {title?.season.string}
         </div>
 
         <div className="border 1px rounded-2xl border-neutral-800 p-1 w-5/6">
