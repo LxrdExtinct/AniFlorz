@@ -17,7 +17,6 @@ export const GenresItemPage = observer(() => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Жанр */}
       <div className="mb-12">
         {Array.isArray(genres) && genres.length > 0 ? (
           genres.map((item) => (
